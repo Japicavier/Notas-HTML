@@ -1,0 +1,245 @@
+<!--Notas personales de HTML-->
+
+
+<!--Formato de las etiquetas-->
+<etiqueta atributo="propiedad"> </etiqueta>
+<!--Ejemplo:-->
+<button color="rojo">BOTÓN</button>
+
+
+Primera página web:
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Primera página web</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="loSiguienteSonEtiquetas,harina,leche,huevo">
+        <meta name="description" content="Esta es una buena página web porque no rebasa los 150 caracteres de descripción">
+        <meta name="author" content="Javier Piña">
+        <meta name="copyright" contente="Pineapple Inc.">
+        <!--Evita que se liste en buscadores-->
+        <meta name="robots" content="noindex"> 
+        <!--Te redirige a otra página, n content se pone la cantidad de segundos de espera y la página a la que se redirige-->
+        <meta http-equiv="refresh" content="6000;URL='https://youtube.com"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" user-scalable=no/>
+        <!--Le da un icono a la pestaña de la página-->
+        <link rel="icon" href="Abeto.ico">
+    </head>
+    <body>
+        <h1>Hola Mundo</h1>
+        <h2>Hola Mundo</h2>
+        <h3>Hola Mundo</h3>
+        <h4>Hola Mundo</h4>
+        <h5>Hola Mundo</h5>
+        <h6>Hola Mundo</h26>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+            Impedit temporibus ratione ullam, deserunt incidunt architecto natus, sapiente quisquam eos facilis fugit cumque ducimus assumenda ut nemo cupiditate, non corporis quas. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        </p>
+        <!--Enlaces-->
+        <p>
+            Ahora vamos a <a href="https://Google.com" target="_BLANK"><b>Google</b></a> sin irnos de esta pagina
+        </p>
+        <a href="cosas/pagina2.html">Página 2:</a>
+
+        <h3>Tipos de letras</h3>
+        <p>Este tipo de cajas no llenan todo el espacio de su contenedor por eso se ven pegadas</p>
+        <b>negrita</b>
+        <i>itálica</i>
+        <strike>tachada</strike>
+        <small>chiquita</small>
+        
+        <p></p>
+
+
+        <h3>Seccion de listas</h3>
+        <!--Lista desordenada-->
+        <ul>
+            <p>Lista desordenada</p>
+            <li>huevo</li>
+            <li>zanahoria</li>
+            <li>refresco</li>
+        </ul>
+        <!--Lista ordenada-->
+        <ol>
+            <p>Lista ordenada</p>
+            <li>uno</li>
+            <li>dos</li>
+            <li>tres</li>
+        </ol>
+        <!--Lista con detalles-->
+        <dl>
+            <dt>Huevos a la mexicana</dt>
+            <dd>Huevo, jamon, jitomate, chile</dd>
+            <dt>Mollete</dt>
+            <dd>Bolillo, frijoles, queso</dd>
+        </dl>
+
+        <h3>Multimedia</h3>
+
+        <p><b>Imagen externa</b></p>
+        <img src="https://static.wikia.nocookie.net/minecraftpe/images/6/6e/Abeto.png/revision/latest?cb=20140425141131&path-prefix=es"> 
+        <p><b>Imagen local</b></p>
+        <img src="Abeto.png">  <br>
+        <p>Lo siguiente es un gif</p>
+        <img src="300px-Rotating_earth_(large).gif">
+        <p>Lo siguiente es un video</p>
+        <video src="videoplayback.mp4" controls></video>
+        <p>Lo siguiente es un audio</p>
+        <audio src="alumno-ebrio-le-manda-un-audio-al-profesor-profe-deme-un-chanse-xdddd.mp3" controls></audio>
+        
+        <div>
+            <h4>Subtítulo</h4>
+            <p>Contenido</p>
+        </div>
+        <div>
+            <h3>Nombre de producto</h3>
+            <p><b>Precio</b></p>
+        </div>
+        <div>
+            <h3>Nombre de producto</h3>
+            <p><b>Precio</b></p>
+        </div>
+        <div>
+            <h3>Nombre de producto</h3>
+            <p><b>Precio</b></p>
+        </div>
+
+        <h3>Formularios</h3>
+        <!--Formulario-->
+        <h4>Forms 1</h4>
+        <form>
+            <input type="text" required="" value="Cambia el texto"><br>
+            <input type="password" required="" placeholder="Password"><br> <!--El atributo required obliga al usuario a completar el campo-->
+            <input type="number" required="" placeholder="Números"><br>
+            <input type="email" placeholder="email"><br>
+            <input type="color"><br>
+            <input type="range" min=5 max = 20><br>
+            <input type="date"><br>
+            <input type="time"><br>
+            <input type="button" value="Boton"><br>
+            <input type="submit"><br>
+        </form>
+        <br>
+        <!--Formulario: Entradas / Input-->
+        <h4>Forms 2</h4>
+        <form method="post">
+            <input type="text" required="">
+            <textarea>Este textarea no tiene readonly</textarea>
+            <textarea readonly="">Hola esto es un textarea con readonly</textarea> 
+            <input type="submit">
+        </form>
+        <br>
+        <h4>Forms 3</h4>
+        <form>
+            <!--Con el label puedes darle texto a los inputs usando su id correspondiente-->
+            <label for="Input 1">Ejemplo de input básico</label>
+            <br>
+            <input type="text" id="Input1" name="Input1">
+            <br><br>
+            <label for="correo1">Input correo</label>
+            <br>
+            <input type="email" id="correo1" name="correo1">
+            <br><br>
+            <label for="numero1">Input número</label>
+            <br>
+            <input type="number" id="numero1" name="numero1">
+            <br><br>
+            <label for="psw1">Input de Password</label>
+            <br>
+            <input type="password" id="psw1" name="psw1">
+            <br><br>
+            <label for="tel1">Input de Teléfono</label>
+            <br>
+            <input type="tel" id="tel1" name="tel1" maxlenght="10">  
+            <br><br>
+            <label for="url1">Input de URL</label>
+            <br>
+            <input type="url" id="url1" name="url1">          
+        </form>
+
+        <h3>Tablas</h3>
+        <p>Agrupan datos de un mismo tipo en columnas</p>
+        <!--Las tablas son como las tablas de cualquier documento. tr (rows) es para las filas, td es para las celdas en las filas (data)-->
+        <table>
+            <tr>
+                <td><b>Nombre</b></td>
+                <td><b>Apellido</b></td>
+                <td><b>Canal</b></td>
+                <td><b>Seguidores</b></td>
+            </tr>
+            <tr>
+                <td>Hobbit</td>
+                <td>No Tiene</td>
+                <td>Migala</td>
+                <td>300 mil</td>
+            </tr>
+            <tr>
+                <td>Lucas</td>
+                <td>Dalto</td>
+                <td>Soy Dalto</td>
+                <td>115 mil</td>
+            </tr>
+        </table>
+        <!--Border le da un borde a la tabla pero es mejor no poenerla para aplicarlo en CSS-->
+        <table border >
+            <tr>
+                <td><b>Nombre</b></td>
+                <td><b>Apellido</b></td>
+                <td><b>Canal</b></td>
+                <td><b>Seguidores</b></td>
+            </tr>
+            <tr>
+                <td>Hobbit</td>
+                <td>No Tiene</td>
+                <td>Migala</td>
+                <td>300 mil</td>
+            </tr>
+            <tr>
+                <td>Dalto</td>
+                <td>Ni idea</td>
+                <td>Soy Dalto</td>
+                <td>115 mil</td>
+            </tr>
+        </table>
+
+        <p>Probando los metadatos con acentos <i>"característica"</i></p>
+        <h3><a href="pagina/orden.html">página ordenada</a></h3>
+
+        <article>
+            <section>
+                <h3>Notas Finales</h3>
+                <center>
+                    <!--La etiqueta alt sirve para darle una descripción en caso de que no cargue la imagen, para el SEO es muy importante. La etiqueta title le da un título cuando se posa el mouse en la imagen-->
+                    <img src="Abeto.png" alt="Minecraft Image" title="Abeto de Minecraft">
+                    <p>Así funciona el center pero es mejor usarlo en CSS</p> 
+                </center>
+                <!--Con el id se puede referenciar a otras partes de la página con href-->
+                <a href="#codigo">Click aquí para ir al código</a><br>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, reprehenderit, itaque voluptatem laboriosam sint id praesentium voluptatibus, quasi in tempore neque at repellat quo dolorem quia illo numquam esse cumque.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt eos mollitia temporibus pariatur aliquam nesciunt ipsam, commodi vero. Quasi assumenda eius nemo quae, tempora cupiditate aliquid necessitatibus hic facilis praesentium.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta nulla recusandae laudantium, inventore eveniet in labore. Corrupti velit consequatur nihil odio in explicabo. Laborum explicabo incidunt, repellat sapiente qui cumque?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, quae eligendi. Vitae in consequuntur culpa enim distinctio, reiciendis qui aspernatur nisi, ratione laudantium odit repellendus, at ad ducimus sunt neque!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, natus voluptatum. Voluptate voluptatibus non tempore dolore, repellendus ad ducimus dolorum ab ex esse aperiam eveniet eos, consequuntur labore veniam deserunt?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat exercitationem delectus nobis deserunt impedit aspernatur hic minima doloremque amet asperiores. Dignissimos ipsum id natus rerum modi perferendis aspernatur necessitatibus esse.
+                </p>
+            </section>
+        </article>
+        <article>
+            <section>
+                <h2 id="codigo">El código es: fguihjokl</h2>
+            </section>
+        </article>
+        
+    </body>
+</html>
+
+<!--Fin del curso-->
